@@ -1,22 +1,24 @@
 <?php
 
-class TabsField extends BaseField 
+class TabsField extends BaseField
 {
-  static public $assets = array(
-    'js' => array(
-      'tabs.js'
-    ),
-    'css' => array(
-      'tabs.css'
-    )
-  );
+    public static $assets = [
+    'js' => [
+      'tabs.js',
+    ],
+    'css' => [
+      'tabs.css',
+    ],
+  ];
 
-  public function template() {
-    $wrapper = new Brick('div', null);
-    $wrapper->data('tab-name', $this->i18n($this->label));
-    $wrapper->data('field','tabs');
-    $wrapper->addClass('tab-placeholder');
+    public function template()
+    {
+        $wrapper = new Brick('div', null);
+        $wrapper->data('tab-name', $this->i18n($this->label));
+        $wrapper->data('field', 'tabs');
+        $wrapper->data('icon', $this->icon);
+        $wrapper->addClass('tab-placeholder');
 
-    return $wrapper;
-  }
+        return $wrapper;
+    }
 }
