@@ -1,33 +1,5 @@
-# Tabs Field
-## Tabbed Fields for Kirby CMS
+This repository was a fork of the Kirby Tabs Field plugin located here:
 
-![Tabs](/tabfield.png)
+https://github.com/afbora/Kirby-Tabs-Field
 
-The tab field type is designed specifically for use within the fields.
-
-
-#### Blueprint Example
-``` YAML
-title: Project
-pages: true
-files: true
-fields:
-  tab1:
-    label: General
-    type:  tabs
-  title:
-    label: Title
-    type:  text
-  text:
-    label: Text
-    type:  textarea
-  tab2:
-    label: Details
-    type:  tabs
-  technologies:
-    label: Technologies
-    type:  textarea
-  link:
-    label: Link
-    type:  url
-```
+This repository is kept only because some links on the Kirby Forum point to it.
